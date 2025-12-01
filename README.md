@@ -120,3 +120,14 @@ A map of extensions by content-type.
 [npm-downloads-image]: https://badgen.net/npm/dm/mime-types
 [npm-url]: https://npmjs.org/package/mime-types
 [npm-version-image]: https://badgen.net/npm/v/mime-types
+
+
+
+## CI Workflow (GitHub Actions)
+
+This project includes a GitHub Actions workflow named **"DevOps Test"**.
+
+- It runs automatically when code is pushed to the **main** or **master** branch.
+- The workflow has a single job called **build** that runs on **ubuntu-latest**.
+- The job checks out this repository's code using `actions/checkout@v4` and then runs a simple shell command to display a confirmation message:  
+  *"Push detected on main branch! Workflow executed successfully"*.
